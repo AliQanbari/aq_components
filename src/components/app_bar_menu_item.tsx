@@ -1,14 +1,13 @@
 import React from "react";
 
 type AppBarItemProps = {
-    name : string,
-    href? : string,
+    children: React.ReactNode,
 }
 
-export default function AppBarMenuItem({name, href} : AppBarItemProps) {
+export default function AppBarMenuItem({children} : AppBarItemProps) {
     return (
-        <div className="mx-5">
-            <a href={href} className="text-lg">{name}</a>
+        <div className="mx-5 text-lg">
+            {children}
         </div>
     );
 };

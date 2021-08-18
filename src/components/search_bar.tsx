@@ -9,7 +9,7 @@ export default function SearchBar(props: SearchBarProps) {
         <div className="relative">
             <input
                 type="text"
-                className="bg-white w-96 h-12 p-4 rounded-md"
+                className="bg-white w-64 sm:w-96 h-12 p-4 rounded-md"
                 placeholder="Search..."
                 onChange={(event) => {
                     if (props.onChange) {
