@@ -3,7 +3,7 @@ import React from "react";
 type AppBarProps = {
     title?: string,
     actions?: React.ReactNode,
-    menuColor: string,
+    menuColor?: string,
 }
 
 export default function AppBar({ title, actions, menuColor }: AppBarProps) {
